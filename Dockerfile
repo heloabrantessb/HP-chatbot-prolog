@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     make \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir pyswip mysql-connector-python
+RUN pip install --no-cache-dir pyswip mysql-connector-python python-dotenv
 
 WORKDIR /src 
 
